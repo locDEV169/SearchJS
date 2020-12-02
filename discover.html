@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Discover</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!--Add bootsrap 4-->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <!--link css-->
+    <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <!--link js-->
+    <script type="text/javascript" src="common.js"></script>
+
+    <!--link lấy font trên mạng-->
+    <link href='http://fonts.googleapis.com/css?family=Monda' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Doppio+One' rel='stylesheet' type='text/css'>
+    <!--link logo lấy từ fontawesome-->
+    <script src="https://kit.fontawesome.com/649a628862.js" crossorigin="anonymous">
+    </script>
+    <script>
+        $(window).on('load', function(event) {
+            $('body').removeClass('preloading');
+            // $('.load').delay(1000).fadeOut('fast');
+            $('.loader').delay(1000).fadeOut('fast');
+        });
+    </script>
+</head>
+
+<body>
+    <div class="loader">
+        <span class="fas fa-spinner xoay icon"><i class="fas fa-spinner"></i></span>
+    </div>
+    <div id="hero">
+        <div class="navbar">
+            <img src="images/0ada6ab4f9e47680823fd7999a904cac.png" style="width:100px; height:100px;" class="logo" alt="">
+            <div class="user">
+                <button type="button">Explore</button>
+                <img src="images/120914323_676081489690209_8442426746122560572_o.jpg" style="width:100px; height:100px;" class="ava" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="info">
+            <h1>Discover</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur atque necessitatibus culpa iste rerum quod quam temporibus, accusantium cupiditate. Nostrum, commodi deleniti est consectetur quae dolor hic suscipit modi minus.</p>
+            <input type="text" placeholder="Search..." name="search" id="search" autocomplete="off">
+            <ul class="list-group" id="list"></ul>
+            <script src="background.js"></script>
+        </div>
+    </div>
+    <div class="slider">
+        <img src="images/left-arrow.png" id="prev" alt="" onclick="prev()">
+        <div class="preview">
+            <img src="images/small1.png" class="active thumbnail" alt="">
+            <img src="images/small2.png" class="thumbnail" alt="">
+            <img src="images/small3.png" class="thumbnail" alt="">
+            <img src="images/small4.png" class="thumbnail" alt="">
+            <img src="images/small5.png" class="thumbnail" alt="">
+        </div>
+        <img src="images/right-arrow.png" id="next" alt="" onclick="next()">
+    </div>
+</body>
+
+</html>
