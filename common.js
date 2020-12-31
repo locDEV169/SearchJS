@@ -53,4 +53,5 @@ function prev() {
         thumbnail[i].classList.remove("active");
         i++;
     }
+    
 }
